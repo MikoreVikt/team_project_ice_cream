@@ -1,12 +1,13 @@
 :root {
-    /* text color */
+
+    // text color
     --main-white-text-color: #FFFFFF;
     --main-black-text-color: #000000;
     --main-grey-text-color: #907E82;
     --accent-color: #D41443;
     --white-color: #FFFFFF;
 
-    /* background color */
+    // background color
     --bg-hd-color: #FFB8CA;
     --bg-ft-color: #FFF5F6;
     --bg-main-color: #ffffff;
@@ -15,10 +16,14 @@
     --bg-product-2-color: #C2E297;
     --bg-accent-color: #ECEBEB;
     --bg-icon-cl: #D41443;
-    
-    /* icon color */
+
+    // icon color
     --icon-cl: #FEA5BB;
 
-    /* transition */
+    // transition
     --anim-standart: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // card-set
+    --item: 3;
+    --indent: 32px;
 }

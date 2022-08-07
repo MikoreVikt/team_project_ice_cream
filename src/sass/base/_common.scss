@@ -9,3 +9,11 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+body {
+    font-family: 'DM sans';
+    font-style: normal;
+    letter-spacing: 0.04em;
+    color: var(--main-black-text-color);
+    background-color: var(--bg-main-color);
+}

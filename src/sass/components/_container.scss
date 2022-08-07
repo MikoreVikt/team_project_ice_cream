@@ -3,15 +3,19 @@
     margin-left: auto;
     margin-right: auto;
 
+    // breakpoint: 320px / 768px / 1200px
+
     @media screen and (min-width: $mobile) {
-        max-width: 320px;
+        max-width: 767px;
+        padding: 0 20px;
     }
 
     @media screen and (min-width: $tablet) {
-        max-width: 768px;
+        max-width: 1199px;
+        padding: 0 32px;
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 1200px;
+        padding: 0 16px;
     }
 }

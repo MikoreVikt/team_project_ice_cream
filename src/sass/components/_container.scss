@@ -6,16 +6,17 @@
     // breakpoint: 320px / 768px / 1200px
 
     @media screen and (min-width: $mobile) {
-        max-width: 767px;
+        max-width: $mobile;
         padding: 0 20px;
     }
 
     @media screen and (min-width: $tablet) {
-        max-width: 1199px;
+        max-width: $tablet;
         padding: 0 32px;
     }
 
     @media screen and (min-width: $desktop) {
+        max-width: $desktop;
         padding: 0 16px;
     }
 }

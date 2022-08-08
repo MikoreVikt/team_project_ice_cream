@@ -65,7 +65,7 @@
     font-size: 26px;
     line-height: 1.15;
     text-transform: uppercase;
-    color:var(--main-white-text-color);
+    color:var(--white-color);
 }
 
 .accent {
@@ -85,7 +85,7 @@
 .btn-red {
     width: 62px;
     height: 24px;
-    color:var(--main-white-text-color);
+    color:var(--white-color);
     background-color:var(--accent-color);
 }
 
@@ -195,7 +195,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
-    color:var(--main-white-text-color)
+    color:var(--white-color)
 }
 
 .current {

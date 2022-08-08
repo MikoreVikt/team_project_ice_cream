@@ -1,0 +1,170 @@
+.section-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFB8CA;
+}
+
+.container-hero {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero header */
+
+.header {
+    position: absolute;
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.btn-burger-menu {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 150;
+}
+
+.circle {
+    position: absolute;
+    top: 83px;
+    right: -62px;
+
+    z-index: 1;
+}
+
+.ice-cream {
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+
+    z-index: 1;
+}
+
+.slogan-box {
+    position: relative;
+    padding-top: 194px;
+    padding-bottom: 158px;
+
+    z-index: 3;
+}
+
+.lead-slogan {
+    width: 218px;
+    margin-top: 0;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.accent {
+    font-size: 48px;
+    color: #D41443;
+}
+
+.btn {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-red {
+    width: 62px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: #D41443;
+}
+
+.btn-white {
+    width: 83px;
+    height: 24px;
+    color: #D41443;
+    background-color: #FFFFFF;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #E17992;
+
+    transition: 500ms;
+
+    z-index: 100;
+}
+
+.btn-mobile-menu {
+    margin-top: 60px;
+    margin-bottom: 19px;
+    width: 209px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #D41443;
+}
+
+.btn-mobile-menu__icon {
+    margin-left: 30px;
+}
+
+.mobile-menu-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu-nav__item {
+    border: solid 1px #E18298;
+}
+
+.mobile-menu-nav__link {
+    display: block;
+    padding-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #FFFFFF;
+}
+
+.current {
+    color: #D41443;
+}

@@ -5,6 +5,7 @@
 .products__label {
   margin-bottom: 15px;
 
+  font-family: 'Titan One';
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
@@ -16,18 +17,17 @@
   @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.13;
-    letter-spacing: 0.04;
   }
 }
 .products__title {
   margin-bottom: 148px;
 
+  font-family: 'Titan One';
   font-size: 34px;
   line-height: 1.15;
-  letter-spacing: 0.04;
   text-align: center;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--accent-color);
   @media screen and (min-width: $tablet) {
     margin-bottom: 158px;
     font-size: 48px;
@@ -36,7 +36,7 @@
     margin-bottom: 281px;
     font-size: 58px;
     line-height: 1.14;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
   }
 }
 .products__list {
@@ -55,21 +55,21 @@
   --item: 1;
   @media screen and (min-width: $tablet) {
     --item: 3;
-    // padding: 118px 32px 40px;
-    padding: 118px 35px 40px;
+    padding: 118px 32px 40px;
+    // padding: 118px 35px 40px;
   }
   @media screen and (min-width: $desktop) {
     padding: 165px 63px 64px 60px;
   }
 }
 .products__item:nth-child(1) {
-  background-color: #ffb8ca;
+  background-color: var(--bg-hd-color);
 }
 .products__item:nth-child(2) {
-  background-color: #f0d1a5;
+  background-color: var(--bg-product-1-color);
 }
 .products__item:nth-child(3) {
-  background-color: #c2e297;
+  background-color: var(--bg-product-2-color);
 }
 @media screen and (max-width: 767px) {
   .products__item:not(:last-of-type) {
@@ -81,7 +81,7 @@
   width: 280px;
   height: 280px;
   position: absolute;
-  top: -30%;
+  top: -29%;
   left: 50%;
   transform: translate(-50%);
 
@@ -90,77 +90,79 @@
   @media screen and (min-width: $tablet) {
     width: 224px;
     height: 224px;
+    top: -28%;
   }
   @media screen and (min-width: $desktop) {
     width: 368px;
     height: 394px;
-    top: -50%;
+    top: -45%;
   }
 }
 .products__item:nth-child(1)::before {
-  background-image: url('../images/products/product-1mob.png');
+  background-image: url('../images/mobile/products-mb_1.png');
 
   // Retina mobile
-  @include retinaScreen('../images/products/product-1mob@2x.png');
+  @include retinaScreen('../images/mobile/products-mb_1@2x.png');
 
   @media screen and (min-width: $tablet) {
-    background-image: url('../images/products/product-1tab.png');
+    background-image: url('../images/tablet/products-tb_1.png');
 
     // Retina tablet
-    @include retinaScreen('../images/products/product-1tab@2x.png');
+    @include retinaScreen('../images/tablet/products-tb_1@2x.png');
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url('../images/products/product-1desk.png');
+    background-image: url('../images/desktop/products-ds_1.png');
 
     // Retina desktop
-    @include retinaScreen('../images/products/product-1desk@2x.png');
+    @include retinaScreen('../images/desktop/products-ds_1@2x.png');
   }
 }
 .products__item:nth-child(2)::before {
-  background-image: url('../images/products/product-2mob.png');
+  background-image: url('../images/mobile/products-mb_2.png');
 
   // Retina mobile
-  @include retinaScreen('../images/products/product-2mob@2x.png');
+  @include retinaScreen('../images/mobile/products-mb_2@2x.png');
 
   @media screen and (min-width: $tablet) {
-    background-image: url('../images/products/product-2tab.png');
+    background-image: url('../images/tablet/products-tb_2.png');
 
     // Retina tablet
-    @include retinaScreen('../images/products/product-2tab@2x.png');
+    @include retinaScreen('../images/tablet/products-tb_2@2x.png');
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url('../images/products/product-2desk.png');
+    background-image: url('../images/desktop/products-ds_2.png');
 
     // Retina desktop
-    @include retinaScreen('../images/products/product-2desk@2x.png');
+    @include retinaScreen('../images/desktop/products-ds_2@2x.png');
   }
 }
 .products__item:nth-child(3)::before {
-  background-image: url('../images/products/product-3mob.png');
+  background-image: url('../images/mobile/products-mb_3.png');
   // Retina mobile
-  @include retinaScreen('../images/products/product-3mob@2x.png');
+  @include retinaScreen('../images/mobile/products-mb_3@2x.png');
 
   @media screen and (min-width: $tablet) {
-    background-image: url('../images/products/product-3tab.png');
+    background-image: url('../images/tablet/products-tb_3.png');
 
     // Retina tablet
-    @include retinaScreen('../images/products/product-3tab@2x.png');
+    @include retinaScreen('../images/tablet/products-tb_3@2x.png');
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url('../images/products/product-3desk.png');
+    background-image: url('../images/desktop/products-ds_3.png');
 
     // Retina desktop
-    @include retinaScreen('../images/products/product-3desk@2x.png');
+    @include retinaScreen('../images/desktop/products-ds_3@2x.png');
   }
 }
 .products__subtitle {
   margin-bottom: 30px;
+
+  font-family: 'Titan One';
   font-size: 20px;
   line-height: 1.15;
-  letter-spacing: 0.04;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -184,7 +186,6 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 0.04;
   text-align: center;
   color: #ffffff;
   @media screen and (min-width: $tablet) {
@@ -207,5 +208,5 @@
   margin: 0 auto;
 }
 .products__icon {
-  fill: #d41443;
+  fill: var(--accent-color);
 }

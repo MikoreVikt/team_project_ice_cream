@@ -19,6 +19,26 @@
         </svg>
       </button>
     </header>
+    <div class="ice-cream">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/mobile/hero-mb.png     1x,
+            ./images/mobile/hero-mb@2x.png  2x,
+            ./images/mobile/hero-mb.webp    1x,
+            ./images/mobile/hero-mb@2x.webp 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/mobile/hero-mb.png"
+          alt="Ice-cream"
+          width="171"
+          height="410"
+        />
+      </picture>
+    </div>
     <div class="slogan-box">
       <h1 class="lead-slogan">
         ice cream made with <span class="accent">passion</span>
@@ -33,7 +53,7 @@
   <button class="btn btn-mobile-menu" type="button">
     <span>Buy now</span>
     <svg class="btn-mobile-menu__icon" width="8" height="12">
-      <use href="./images/icons.svg#icon-arrow"></use>
+      <use href="./images/icons.svg#icon-more"></use>
     </svg>
   </button>
   <ul class="list mobile-menu-nav">

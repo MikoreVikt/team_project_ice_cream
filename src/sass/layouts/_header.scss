@@ -57,16 +57,13 @@
     z-index: 3;
 }
 
-.lead-slogan {
+.lead-slogan {  
     width: 218px;
     margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
     color:var(--main-white-text-color);
 }
@@ -77,8 +74,6 @@
 }
 
 .btn {
-    font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;

@@ -305,6 +305,12 @@ textarea:focus {
 
 .modal__btn-send:hover,
 .modal__btn-send:focus {
-    background-color: #188CE8;
+    background-color: var(--bg-accent-color);
+    outline-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__btn-send:hover span,
+.modal__btn-send:focus span {
+    color: var(--accent-color);
 }

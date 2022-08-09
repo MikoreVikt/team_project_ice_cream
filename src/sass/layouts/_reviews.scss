@@ -1,0 +1,203 @@
+.customer-reviewers {
+    background-color: var(--main-white-text-color);
+
+    padding: 60px 0;
+
+    @media screen and(min-width: $desktop) {
+        padding: 120px 0;
+    }
+}
+
+.thumb {
+    &__image {
+        margin: 0 auto;
+        text-align: center;
+        width: 85px;
+        height: 85px;
+
+        margin-bottom: 32px;
+
+        @media screen and(min-width: $tablet) {
+            margin-bottom: 20px;
+        }
+
+        @media screen and(min-width: $desktop) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__comment {
+        margin: 0 auto;
+        margin-bottom: 36px;
+
+        position: relative;
+        background-color: #FAFAFA;
+
+        padding-top: 43px;
+        padding-bottom: 26px;
+
+        @media screen and(min-width: $tablet) {
+            width: 620px;
+            height: 164px;
+
+            padding: 0;
+            margin-bottom: 24px;
+            padding-top: 37px;
+        }
+
+        @media screen and(min-width: $desktop) {
+            width: 968px;
+            height: 138px;
+
+            padding: 0;
+            margin-bottom: 36px;
+            padding-top: 47px;
+        }
+
+        &::after {
+            content: "";
+            width: 26px;
+            height: 4px;
+            border-bottom: 4px dotted #C7133E;
+
+            position: absolute;
+            left: 50%;
+            bottom: -16px;
+
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.comment__lines {
+    width: calc(100% - 100px);
+    height: calc(100% - 91px);
+
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+
+    @media screen and(min-width: $tablet) {
+        width: 608px;
+        height: 61px;
+        bottom: 36px;
+    }
+
+    @media screen and(min-width: $desktop) {
+        width: 821px;
+        height: 31px;
+        bottom: 31px;
+    }
+
+    transform: translateX(-50%);
+    background-image: repeating-linear-gradient(to top,
+        var(--icon-cl-2) 0,
+        var(--icon-cl-2) 1px,
+        transparent 2px,
+        transparent 30px);
+
+    &::before {
+        content: "";
+        width: 54px;
+        height: 40px;
+
+        background-image: url("../images/icons/icon-quotes.svg");
+
+        position: absolute;
+        top: -4px;
+        left: 0;
+
+        transform: translateY(-100%);
+        z-index: -1;
+    }
+}
+
+.customer-reviewers {
+    &__comment {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: calc(30/12);
+
+        padding: 0 60px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and(min-width: $tablet) {
+            width: 514px;
+            height: 83px;
+            padding: 0;
+            font-size: 14px;
+            letter-spacing: .04em;
+            line-height: calc(30.24/14);
+        }
+
+
+        @media screen and(min-width: $desktop) {
+            width: 750px;
+            height: 52px;
+
+            font-size: 16px;
+            line-height: calc(29.76/16);
+        }
+
+        position: relative;
+        z-index: 100;
+    }
+
+    &__customer {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: calc(26/14);
+        text-align: center;
+
+        margin-bottom: 16px;
+
+        @media screen and(min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(29.76/16);
+            margin-bottom: 32px;
+        }
+
+        @media screen and(min-width: $desktop) {
+            font-size: 20px;
+            line-height: calc(37.2/20);
+        }
+    }
+}
+
+.button {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    &__item {
+        width: 12px;
+        height: 12px;
+
+        border: transparent;
+        border-radius: 50%;
+
+        position: relative;
+    }
+
+    &__current {
+        background-color: transparent;
+        color: #D31342;
+
+        &:hover {
+            color: #C7133E;
+        }
+    }
+}
+
+.icon__house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    fill: currentColor;
+    transform: translate(-50%, -50%);
+}

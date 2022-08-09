@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 1.17;
     text-align: center;
-    color: #ffa5ba;
+    color: var(--main-pink-text-color);
 
     @media screen and (min-width: $tablet) {
       font-size: 26px;
@@ -59,7 +59,7 @@
     font-size: 20px;
     line-height: 1.15;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white-color);
 
     @media screen and (min-width: $desktop) {
       font-size: 30px;
@@ -70,7 +70,7 @@
       display: block;
       margin: 32px auto;
       width: 26px;
-      border-bottom: 6px dotted #ffffff;
+      border-bottom: 6px dotted var(--white-color);
     }
   }
   &__description {
@@ -79,7 +79,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
-    color: #ffffff;
+    color: var(--white-color);
     @media screen and (min-width: $tablet) {
       line-height: 1.76;
     }
@@ -99,7 +99,7 @@
   padding: 160px 39px 41px 40px;
   border-radius: 24px;
   --item: 1;
-  transition: box-shadow var(--anim-standart);
+  transition: box-shadow var(--anim-standart), transform var(--anim-standart);
 
   @media screen and (max-width: 767px) {
     max-width: 400px;
@@ -112,11 +112,6 @@
   }
   @media screen and (min-width: $desktop) {
     padding: 165px 63px 64px 60px;
-  }
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   &:nth-child(1) {
     background-color: var(--bg-hd-color);
@@ -218,7 +213,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;

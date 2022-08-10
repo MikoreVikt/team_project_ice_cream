@@ -48,12 +48,15 @@
     display: flex;
     align-items: center;
 
+
     @media screen and (max-width: $tablet) {
         justify-content: space-between;
     }
 
     @media screen and (min-width: $desktop) {
         justify-content: space-between;
+
+        z-index: 2;
     }
 }
 
@@ -74,13 +77,15 @@
 
     &__link {
         display: block;
-        padding-left: 20px;
-        margin-top: 12px;
-        margin-bottom: 12px;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 1.29;
+        font-size: 16px;
+        line-height: 1.31;
         color: var(--white-color);
+
+    }
+
+    &__item:not(:last-child) {
+            margin-right: 35px;
     }
 
         @media screen and (max-width: 1199px) {
@@ -126,6 +131,11 @@
     
         &__icon {
             margin-left: 12px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color:var(--bg-accent-color);
         }
     }
 }
@@ -231,6 +241,8 @@
 .btn {
     border-radius: 20px;
     cursor: pointer;
+
+    transition: var(--anim-standart);
 }
 
 .btn-red {
@@ -259,6 +271,11 @@
     line-height: 1.25;
     color:var(--accent-color);
     background-color:var(--white-color);
+
+    &:hover,
+    &:focus {
+            background-color: var(--bg-accent-color);
+        }
 
     @media screen and (min-width: $desktop) {
         width: 138px;
@@ -451,7 +468,7 @@
 
     background-color:var(--bg-mb-tb-menu-color);
 
-    transition: 500ms;
+    transition:var(--anim-standart);
 
     z-index: 100;
 
@@ -479,8 +496,13 @@
     line-height: 1.31;
     color:var(--accent-color);
 
+    &:hover,
+    &:focus {
+        background-color: var(--bg-accent-color);
+        }
+
     &__icon {
-            margin-left: 30px;
+        margin-left: 30px;
         }
 }
 

@@ -1,11 +1,11 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  const linksRef = document.getElementsByClassName("mobile-menu-nav__link");
+  const linksRef = [document.getElementsByClassName("mobile-menu-nav__link")];
   const bodyRef = document.body;
   menuBtnRef.addEventListener("click", openCloseMenu);
 
-  Array.from(linksRef).forEach(element => element.addEventListener("click", openCloseMenu));
+  linksRef.forEach(element => element.addEventListener("click", openCloseMenu));
 
   function openCloseMenu() {
     const expanded =

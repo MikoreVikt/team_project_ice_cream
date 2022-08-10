@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),n=document.getElementsByClassName("mobile-menu-nav__link"),a=document.body;e.addEventListener("click",s);for(var o=0;o<n.length;o++)n[o].addEventListener("click",s);function s(){var n="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is-open"),a.classList.toggle("no-scroll")}}();
+//# sourceMappingURL=index.c896437d.js.map

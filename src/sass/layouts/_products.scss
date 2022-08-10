@@ -112,7 +112,7 @@
     padding-right: 39px;
     padding-left: 41px;
     backface-visibility: hidden;
-    transition: transform var(--anim-slow);
+    transition: transform var(--anim-standart);
     @media screen and (min-width: 768px) {
       top: 20%;
       padding-right: 35px;
@@ -157,10 +157,10 @@
     height: 535px;
     padding: 165px 63px 60px 64px;
   }
-  // &:hover {
-  //   transform: scale(1.2);
-  //   z-index: 2;
-  // }
+  &:hover {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    transform: scale(1.1);
+  }
   &:nth-child(1) {
     background-color: var(--bg-hd-color);
   }
@@ -263,6 +263,4 @@
 }
 .is-rotate {
   transform: rotateY(360deg);
-  // transform: scale(1.2);
-  // z-index: 2;
 }

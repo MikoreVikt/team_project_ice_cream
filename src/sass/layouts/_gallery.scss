@@ -1,11 +1,7 @@
 .gallery__container {
-  margin-left: auto;
-  margin-right: auto;
-
   @media screen and (min-width: 768px) {
     width: 100%;
   }
-
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
@@ -31,20 +27,17 @@
 }
 
 .gallery {
-  padding-bottom: 80px;
   background-image: linear-gradient(to bottom, #fff5f6 17%, #fff 17%);
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
-    padding-bottom: 60px;
     background-image: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery {
-    padding-bottom: 120px;
     background-image: linear-gradient(to bottom, #fff5f6 15%, #fff 15%);
   }
 }

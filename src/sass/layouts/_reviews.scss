@@ -193,6 +193,14 @@
     }
 }
 
+.list{
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
 .icon__house {
     position: absolute;
     top: 50%;

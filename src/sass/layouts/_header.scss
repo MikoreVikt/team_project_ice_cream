@@ -8,7 +8,7 @@
         overflow: hidden;
     }
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 32px;
         padding-left: 32px;
         padding-right: 32px;
@@ -81,7 +81,7 @@
 .btn-mobile-header {
     display: none;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         width: 160px;
         height: 44px;
         display: flex;
@@ -105,7 +105,7 @@
 
     z-index: 1;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         position: absolute;
         left: 50%;
         top: 0;
@@ -124,7 +124,7 @@
 
     z-index: 1;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         position: absolute;
         left: 50%;
         transform: translate(-20%, 0);
@@ -139,7 +139,7 @@
     
     z-index: 3;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 70px;
         padding-bottom: 190px;
         width: 162px;
@@ -155,7 +155,7 @@
     text-transform: uppercase;
     color:var(--white-color);
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         font-size: 22px;
         line-height: 1.14;
     }
@@ -165,7 +165,7 @@
     font-size: 48px;
     color:var(--accent-color);
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: $tablet) {
         font-size: 34px;
         line-height: 1.14;
     }
@@ -347,7 +347,7 @@
         transform: translateX(0);
     }
 
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: $desktop) {
         display: none;
     }
 }

@@ -1,14 +1,22 @@
 (() => {
   const prod = {
-    openProdBtn: document.querySelector('.products__open'),
-    closeProdBtn: document.querySelector('.products__close'),
-    front: document.querySelector('.products__front'),
-    back: document.querySelector('.products__back'),
+    openProdBtn: document.getElementsByClassName('products__open'),
+    closeProdBtn: document.getElementsByClassName('products__close'),
+    front: document.getElementsByClassName('products__front'),
+    back: document.getElementsByClassName('products__back'),
+    icon: document.getElementsByClassName('products__icon'),
   };
-  prod.openProdBtn.addEventListener('click', toggleProd);
-  prod.closeProdBtn.addEventListener('click', toggleProd);
-  function toggleProd() {
-    prod.front.classList.toggle('rotate');
-    prod.back.classList.toggle('is-rotate');
+  for (let i = 0; i < prod.openProdBtn.length; i++) {
+    prod.openProdBtn[i].addEventListener('click', function () {
+      toggleProd(i);
+    });
+    prod.closeProdBtn[i].addEventListener('click', function () {
+      toggleProd(i);
+    });
+  }
+  function toggleProd(elemntIndex) {
+    prod.front[elemntIndex].classList.toggle('rotate');
+    prod.back[elemntIndex].classList.toggle('is-rotate');
+    prod.icon[2 * elemntIndex + 1].style.transform = 'rotate(270deg)';
   }
 })();

@@ -52,7 +52,8 @@
       --indent: 32px;
     }
   }
-  &__subtitle {
+  &__subtitle,
+  &__subtitle--back {
     margin-bottom: 30px;
 
     font-family: 'Titan One';
@@ -73,7 +74,8 @@
       border-bottom: 6px dotted var(--white-color);
     }
   }
-  &__description {
+  &__description,
+  &__desc {
     margin-bottom: 32px;
 
     font-size: 14px;
@@ -84,19 +86,60 @@
       line-height: 1.76;
     }
     @media screen and (min-width: $desktop) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       font-size: 16px;
       line-height: 1.75;
     }
   }
+  &__open,
+  &__close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
   &__icon {
     fill: var(--accent-color);
+  }
+
+  &__subtitle--back {
+    margin-bottom: 15px;
+  }
+  &__desc {
+    margin-bottom: 15px;
+  }
+  &__front,
+  &__back {
+    position: absolute;
+    left: 0;
+    top: 33%;
+    padding-right: 39px;
+    padding-left: 41px;
+    backface-visibility: hidden;
+    transition: transform var(--anim-slow);
+    @media screen and (min-width: 768px) {
+      top: 20%;
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 30%;
+      padding-right: 63px;
+      padding-left: 60px;
+    }
+  }
+  &__back {
+    transform: rotateY(180deg);
   }
 }
 
 .products__item {
   position: relative;
-  padding: 160px 39px 41px 40px;
+  height: 489px;
+  padding: 160px 39px 40px 41px;
   border-radius: 24px;
   --item: 1;
   transition: box-shadow var(--anim-standart), transform var(--anim-standart);
@@ -108,10 +151,16 @@
   }
   @media screen and (min-width: $tablet) {
     --item: 3;
+    height: 473px;
     padding: 118px 32px 40px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 165px 63px 64px 60px;
+    height: 535px;
+    padding: 165px 63px 60px 64px;
+  }
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
   }
   &:nth-child(1) {
     background-color: var(--bg-hd-color);
@@ -209,13 +258,12 @@
     }
   }
 }
-.products__wrap {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+
+.rotate {
+  transform: rotateY(180deg);
+}
+.is-rotate {
+  transform: rotateY(360deg);
+  // transform: scale(1.2);
+  // z-index: 2;
 }

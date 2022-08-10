@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),n=[document.getElementsByClassName("mobile-menu-nav__link")],o=document.body;function s(){const n="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is-open"),o.classList.toggle("no-scroll")}e.addEventListener("click",s),n.forEach((e=>e.addEventListener("click",s)))})();
+//# sourceMappingURL=index.cf95142c.js.map

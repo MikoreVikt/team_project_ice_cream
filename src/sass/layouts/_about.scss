@@ -2,7 +2,6 @@
   //   width: 320px;
   background-color: var(--bg-ft-color);
   padding-top: 60px;
-  padding-bottom: 120px;
   margin: 0;
 
   background-image: url('../images/mobile/about-mb_2.png');
@@ -93,7 +92,6 @@
   }
 }
 .about-made__button {
-  margin-bottom: 40px;
   width: 176px;
   height: 44px;
   font-family: 'DM Sans';
@@ -108,14 +106,6 @@
   justify-content: center;
   background-color: var(--white-color);
   color: var(--bg-icon-cl);
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-  }
 }
 
 .about-made__button:hover,

@@ -93,6 +93,7 @@
     display: block;
     margin: 0 auto;
     border: none;
+    cursor: pointer;
   }
   &__icon {
     fill: var(--accent-color);
@@ -129,6 +130,9 @@
   &__back {
     padding: 0 15px;
     transform: rotateY(180deg);
+    @media screen and (min-width: 1200px) {
+      top: 25%;
+    }
   }
 }
 .products__subtitle::after {

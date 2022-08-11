@@ -17,3 +17,9 @@ body {
     color: var(--main-black-text-color);
     background-color: var(--bg-main-color);
 }
+
+.no-scroll{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}

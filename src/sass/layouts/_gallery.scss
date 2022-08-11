@@ -1,13 +1,15 @@
-.gallery__container {
-  margin-left: auto;
-  margin-right: auto;
+.gallery .container {
+  padding: 0;
+}
 
+.gallery__container {
   @media screen and (min-width: 768px) {
     width: 100%;
+    padding: 0;
   }
-
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0;
   }
 }
 
@@ -31,20 +33,17 @@
 }
 
 .gallery {
-  padding-bottom: 80px;
   background-image: linear-gradient(to bottom, #fff5f6 17%, #fff 17%);
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
-    padding-bottom: 60px;
     background-image: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery {
-    padding-bottom: 120px;
     background-image: linear-gradient(to bottom, #fff5f6 15%, #fff 15%);
   }
 }
@@ -111,12 +110,11 @@
   overflow: hidden;
   border-radius: 8px;
   transform: scale(1) translateX(0);
-  transition: transform 250ms ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .gallery__image--one:hover,
 .gallery__image--one:focus {
-  cursor: pointer;
   transform: scale(1.1) translateX(-8px);
 }
 
@@ -136,7 +134,6 @@
 
 .gallery__image--two:hover,
 .gallery__image--two:focus {
-  cursor: pointer;
   transform: scale(1.1) translate(-8px, -8px);
 }
 
@@ -156,7 +153,6 @@
 
 .gallery__image--three:hover,
 .gallery__image--three:focus {
-  cursor: pointer;
   transform: scale(1.1) translate(-8px, 8px);
 }
 
@@ -176,7 +172,6 @@
 
 .gallery__image--four:hover,
 .gallery__image--four:focus {
-  cursor: pointer;
   z-index: 1;
   transform: scale(1.1) translate(-10px, -10px);
 }
@@ -213,7 +208,6 @@
 
 .gallery__image--five:hover,
 .gallery__image--five:focus {
-  cursor: pointer;
   transform: scale(1.1) translateX(10px);
 }
 
@@ -233,7 +227,6 @@
 
 .gallery__image--six:hover,
 .gallery__image--six:focus {
-  cursor: pointer;
   transform: scale(1.1) translate(-8px, -8px);
 }
 
@@ -253,7 +246,6 @@
 
 .gallery__image--seven:hover,
 .gallery__image--seven:focus {
-  cursor: pointer;
   transform: scale(1.1) translateX(-8px);
 }
 
@@ -273,7 +265,6 @@
 
 .gallery__image--eight:hover,
 .gallery__image--eight:focus {
-  cursor: pointer;
   transform: scale(1.1) translate(-8px, -8px);
 }
 
@@ -293,7 +284,6 @@
 
 .gallery__image--nine:hover,
 .gallery__image--nine:focus {
-  cursor: pointer;
   transform: scale(1.1) translate(-8px, 8px);
 }
 
@@ -313,7 +303,6 @@
 
 .gallery__image--ten:hover,
 .gallery__image--ten:focus {
-  cursor: pointer;
   transform: scale(1.1) translateX(-8px);
 }
 

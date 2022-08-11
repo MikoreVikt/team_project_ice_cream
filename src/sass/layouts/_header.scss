@@ -135,6 +135,7 @@
         font-size: 16px;
         line-height: 1.31;
         color: var(--accent-color);
+        background-color: var(--white-color);
     
         &__icon {
             margin-left: 12px;
@@ -156,18 +157,19 @@
 
     @media screen and (min-width: $tablet) {
         position: absolute;
+        top: 10;
         left: 50%;
-        top: 0;
+
 
         transform: translate(-35%, 0);
         }
 
     @media screen and (min-width: $desktop) {
         position: absolute;
+        top: 10;
         left: 50%;
-        top: 0;
 
-        transform: translate(-35%, 0);
+        transform: translate(-12%, 0);
 
         z-index: 1;
         }        
@@ -187,6 +189,13 @@
         left: 50%;
         transform: translate(-20%, 0);
         }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        left: 50%;
+        
+        transform: translate(5%, 0);
+    }
 }
 
 .slogan-box {

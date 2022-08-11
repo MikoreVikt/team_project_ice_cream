@@ -271,3 +271,125 @@
 .about-field__icon {
   fill: var(--main-pink-text-color);
 }
+
+// details
+
+.about-made__more {
+  position: relative;
+}
+
+.about-made__button {
+  position: absolute;
+  bottom: -64px;
+  left: 0;
+
+  width: 176px;
+  height: 44px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  border-radius: 22px;
+  border: var(--white-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--white-color);
+  color: var(--bg-icon-cl);
+  cursor: pointer;
+  transition: background-color var(--anim-standart),
+    transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-made__button:hover,
+.about-made__button:focus {
+  background-color: var(--bg-accent-color);
+}
+
+.btn-icon {
+  margin-left: 14px;
+  fill: var(--bg-icon-cl);
+}
+
+.about-made__more .about-made__button::before {
+  content: attr(data-close);
+}
+
+.about-made__more[open] .about-made__button::before {
+  content: attr(data-open);
+}
+
+.about-made__more[open] .about-made__button {
+  background-color: var(--white-color);
+}
+
+.about-made__element-more {
+  // margin-bottom: 20px;
+
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--main-grey-text-color);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 176%;
+    color: var(--main-grey-text-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 194%;
+    color: var(--main-grey-text-color);
+  }
+}
+
+.about-made__more[open] .about-made__button {
+  animation: slide 0.8s;
+  transform: translateY(20px);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-made__button {
+  animation: slide 0.8s;
+  transform: translateY(-20px);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.about-made__more[open] .about-made__element-more {
+  animation: slide 0.8s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+// .about-made__more[open] .about-made__element-more {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
+// details end

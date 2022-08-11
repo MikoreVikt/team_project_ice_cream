@@ -1,13 +1,21 @@
 .gallery .container {
   padding: 0;
+  max-width: 100%;
 }
 
 .gallery__container {
-  @media screen and (min-width: 768px) {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__container {
     width: 100%;
     padding: 0;
   }
-  @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__container {
     width: 1200px;
     padding: 0;
   }
@@ -16,8 +24,8 @@
 .gallery__list {
   display: flex;
   justify-content: center;
-  /*align-items: center; */
   gap: 2px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {

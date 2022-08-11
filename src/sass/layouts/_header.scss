@@ -12,7 +12,12 @@
         padding-top: 32px;
         padding-left: 32px;
         padding-right: 32px;
+    }
 
+    @media screen and (min-width: $desktop) {
+        padding-top: 37px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -35,6 +40,13 @@
     }
 }
 
+.btn {
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: var(--anim-standart);
+}
+
 /* Hero header */
 
 .header {
@@ -43,25 +55,53 @@
     display: flex;
     align-items: center;
 
+
     @media screen and (max-width: $tablet) {
         justify-content: space-between;
     }
 
-    @media screen and (min-width: $tablet) {
-    
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+
+        z-index: 2;
     }
 }
 
 .logo {
     display: flex;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin-right: auto;
     }
 }
 
 .logo-icon {
     fill: var(--bg-icon-cl);
+}
+
+.menu-nav {
+    display: flex;
+
+    &__link {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: var(--white-color);
+
+    }
+
+    &__item:not(:last-child) {
+            margin-right: 35px;
+    }
+
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 .btn-burger-menu {
@@ -75,6 +115,10 @@
 
     @media screen and (min-width: $tablet) {
             margin-right: 32px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            display: none;
         }
 }
 
@@ -95,6 +139,11 @@
         &__icon {
             margin-left: 12px;
         }
+
+        &:hover,
+        &:focus {
+            background-color:var(--bg-accent-color);
+        }
     }
 }
 
@@ -110,9 +159,18 @@
         left: 50%;
         top: 0;
 
-
         transform: translate(-35%, 0);
         }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        left: 50%;
+        top: 0;
+
+        transform: translate(-35%, 0);
+
+        z-index: 1;
+        }        
 }
 
 .ice-cream {
@@ -144,6 +202,12 @@
         padding-bottom: 190px;
         width: 162px;
         }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 110px;
+        padding-bottom: 316px;
+        width: 277px;
+        }        
 }
 
 .lead-slogan {  
@@ -159,6 +223,11 @@
         font-size: 22px;
         line-height: 1.14;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 38px;
+        line-height: 1.16;
+    }
 }
 
 .accent {
@@ -169,31 +238,74 @@
         font-size: 34px;
         line-height: 1.14;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 0.9;
+    }
 }
 
-.btn {
-    border-radius: 20px;
-    cursor: pointer;
+.link-box {
+    display: flex;
 }
 
-.btn-red {
+.link-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 62px;
     height: 24px;
+    margin-right: 8px;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     color:var(--white-color);
     background-color:var(--accent-color);
+
+    cursor: pointer;
+        
+    transition: var(--anim-standart);
+
+    @media screen and (min-width: $desktop) {
+        width: 107px;
+        height: 40px;
+        margin-right: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+    }    
 }
 
-.btn-white {
+.link-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 83px;
     height: 24px;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     color:var(--accent-color);
     background-color:var(--white-color);
+
+    cursor: pointer;
+        
+    transition: var(--anim-standart);
+
+    &:hover,
+    &:focus {
+            background-color: var(--bg-accent-color);
+        }
+
+    @media screen and (min-width: $desktop) {
+        width: 138px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+    }       
 }
 
 .milk-box {
@@ -204,8 +316,17 @@
 
     z-index: 2;
 
+    @media screen and (min-width: $desktop) {
+        bottom: 60px;
+    }
+
     &__wrap {
         width: 114px;
+
+        @media screen and (min-width: $desktop) {
+            width: 200px;
+    }
+
     }
 
     &__text {
@@ -216,6 +337,13 @@
         line-height: 1.5;
         letter-spacing: normal;
         color: var(--white-color);
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: normal;
+        }
     }
 
     &__btn {
@@ -226,6 +354,11 @@
         align-items: center;
         border-radius: 50%;
         cursor: pointer;
+
+        @media screen and (min-width: $desktop) {
+            width: 26px;
+            height: 26px;
+        }
     }
 
     &--icon {
@@ -240,7 +373,11 @@
 .account-box {
     position: absolute;
     right: 0;
-    top: 92px;
+    top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        top: 115px;
+    }
 
     &__cafes {
         position: relative;
@@ -252,6 +389,7 @@
     }
 
     &__number {
+        position: relative;
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
@@ -260,6 +398,11 @@
         color: var(--accent-color);
 
         z-index: 2;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 46px;
+            line-height: 1.15;
+        }
     }
 
     &__text {
@@ -267,19 +410,29 @@
         font-size: 8px;
         line-height: 1.25;
         color: var(--white-color);
+
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 1.29;
+        }        
     }
 
     &__circle {
         position: absolute;
 
         top: 0;
-        right: 0;
+        right: 7px;
         width: 16px;
         height: 16px;
         border-radius: 50%;
         background-color:var(--white-color);
 
-        z-index: 0.5;
+        z-index: 1;
+
+        @media screen and (min-width: $desktop) {
+            width: 30px;
+            height: 30px;
+        }
     }
 
     @media screen and (max-width: 767px) {
@@ -337,7 +490,7 @@
 
     background-color:var(--bg-mb-tb-menu-color);
 
-    transition: 500ms;
+    transition:var(--anim-standart);
 
     z-index: 100;
 
@@ -365,8 +518,13 @@
     line-height: 1.31;
     color:var(--accent-color);
 
+    &:hover,
+    &:focus {
+        background-color: var(--bg-accent-color);
+        }
+
     &__icon {
-            margin-left: 30px;
+        margin-left: 30px;
         }
 }
 

@@ -40,6 +40,13 @@
     }
 }
 
+.btn {
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: var(--anim-standart);
+}
+
 /* Hero header */
 
 .header {
@@ -238,39 +245,54 @@
     }
 }
 
-.btn {
-    border-radius: 20px;
-    cursor: pointer;
-
-    transition: var(--anim-standart);
+.link-box {
+    display: flex;
 }
 
-.btn-red {
+.link-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 62px;
     height: 24px;
+    margin-right: 8px;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     color:var(--white-color);
     background-color:var(--accent-color);
 
+    cursor: pointer;
+        
+    transition: var(--anim-standart);
+
     @media screen and (min-width: $desktop) {
         width: 107px;
         height: 40px;
+        margin-right: 12px;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.3;
     }    
 }
 
-.btn-white {
+.link-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 83px;
     height: 24px;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     color:var(--accent-color);
     background-color:var(--white-color);
+
+    cursor: pointer;
+        
+    transition: var(--anim-standart);
 
     &:hover,
     &:focus {

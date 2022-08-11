@@ -1,0 +1,14 @@
+.advantages{
+    padding-bottom: 80px;
+    padding-top: 40px;
+    background-color: #FFF5F6;
+
+    @media screen and(min-width: $tablet){
+        padding: 60px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+}

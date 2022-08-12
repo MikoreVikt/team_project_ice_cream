@@ -1,5 +1,4 @@
 .about {
-  //   width: 320px;
   background-color: var(--bg-ft-color);
   padding-top: 60px;
   margin: 0;
@@ -17,7 +16,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 20px;
     background-image: none;
   }
 
@@ -40,7 +38,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-  //   width: 200px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
@@ -107,7 +104,6 @@
   justify-content: center;
   background-color: var(--white-color);
   color: var(--bg-icon-cl);
-  margin-bottom: 30px;
 }
 
 .about-made__button:hover,
@@ -127,8 +123,11 @@
 }
 
 .about-made__element {
+  padding-bottom: 64px;
+
   @media screen and (min-width: $tablet) {
     padding-left: 32px;
+    padding-bottom: 44px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -159,8 +158,6 @@
 }
 
 .about-made__element-text {
-  margin-bottom: 20px;
-
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
@@ -282,7 +279,7 @@
 
 .about-made__button {
   position: absolute;
-  bottom: -64px;
+  bottom: -84px;
   left: 0;
 
   width: 176px;
@@ -302,6 +299,22 @@
   cursor: pointer;
   transition: background-color var(--anim-standart),
     transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slide 0.8s;
+  transform: translateY(-20px);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $tablet) {
+    bottom: -64px;
+  }
+}
+
+.about-made__more[open] .about-made__button {
+  animation: slide 0.8s;
+  transform: translateY(-10px);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    transform: translateY(20px);
+  }
 }
 
 .about-made__button:hover,
@@ -312,6 +325,16 @@
 .btn-icon {
   margin-left: 14px;
   fill: var(--bg-icon-cl);
+}
+
+.about-made__more[open] .btn-icon {
+  transform: rotate(-90deg);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-made__more .btn-icon {
+  transform: rotate(0deg);
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-made__more .about-made__button::before {
@@ -327,8 +350,6 @@
 }
 
 .about-made__element-more {
-  // margin-bottom: 20px;
-
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
@@ -336,6 +357,7 @@
   color: var(--main-grey-text-color);
 
   @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
     font-size: 14px;
     line-height: 176%;
     color: var(--main-grey-text-color);
@@ -346,18 +368,6 @@
     line-height: 194%;
     color: var(--main-grey-text-color);
   }
-}
-
-.about-made__more[open] .about-made__button {
-  animation: slide 0.8s;
-  transform: translateY(20px);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about-made__button {
-  animation: slide 0.8s;
-  transform: translateY(-20px);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes slide {
@@ -387,10 +397,5 @@
     transform: translate(0, 0);
   }
 }
-
-// .about-made__more[open] .about-made__element-more {
-//   opacity: 1;
-//   visibility: visible;
-// }
 
 // details end

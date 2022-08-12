@@ -1,23 +1,11 @@
-.gallery .container {
-  padding: 0;
-  max-width: 100%;
-}
-
 .gallery__container {
+  margin: 0 auto;
   width: 100%;
-}
+  max-width: 1200px;
 
-@media screen and (min-width: 768px) {
-  .gallery__container {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery__container {
-    width: 1200px;
-    padding: 0;
+  @media screen and (min-width: 1200px) {
+    padding-right: 94px;
+    padding-left: 93px;
   }
 }
 
@@ -25,7 +13,6 @@
   display: flex;
   justify-content: center;
   gap: 2px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -114,7 +101,7 @@
 .gallery__image--eight,
 .gallery__image--nine,
 .gallery__image--ten {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 8px;
   transform: scale(1) translateX(0);

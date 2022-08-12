@@ -460,3 +460,46 @@
             display: none;
         }
 }
+
+#myBtn {
+    width: 50px;
+    height: 50px;
+
+    display: none; 
+
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+
+    border: none; 
+    outline: none; 
+
+    background-color: var(--bg-hd-color);
+    color: #fff;
+    
+    border-radius: 50%; 
+
+    cursor: pointer; 
+    z-index: 99; 
+    transform: rotate(270deg);
+
+
+    transition: background-color var(--anim-standart),
+                        color var(--anim-standart);
+  }
+  
+  #myBtn:hover {
+    background-color: #d41443; 
+    color: var(--bg-hd-color);
+  }
+
+  .btn-top__icon{
+    fill: currentColor;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  

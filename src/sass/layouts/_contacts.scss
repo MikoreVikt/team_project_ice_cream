@@ -349,6 +349,20 @@
   padding: 35px 25px 20px;
 }
 
+@media screen and (min-width: $tablet) {
+  .contacts__franchise {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .contacts__franchise {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 .modal__franchise-title {
   font-size: 18px;
   color: #d41443;

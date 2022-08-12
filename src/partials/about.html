@@ -12,6 +12,7 @@
             ./images/desktop/about-ds_1@2x.webp 2x
           "
           media="(min-width: 1200px)"
+          sizes="(min-width: 1200px) 501px"
           type="image/webp"
         />
         <source
@@ -20,6 +21,7 @@
             ./images/desktop/about-ds_1@2x.png 2x
           "
           media="(min-width: 1200px)"
+          sizes="(min-width: 1200px) 501px"
           type="image/png"
         />
         <source
@@ -28,6 +30,7 @@
             ./images/tablet/about-tb@2x.webp 2x
           "
           media="(min-width: 768px)"
+          sizes="(max-width: 1199px) 336px"
           type="image/webp"
         />
         <source
@@ -36,6 +39,7 @@
             ./images/tablet/about-tb@2x.png 2x
           "
           media="(min-width: 768px)"
+          sizes="(max-width: 1199px) 336px"
           type="image/png"
         />
         <source
@@ -44,6 +48,7 @@
             ./images/mobile/about-mb_1@2x.webp 2x
           "
           media="(max-width: 767px)"
+          sizes="(max-width: 767px) 280px"
           type="image/webp"
         />
         <source
@@ -75,13 +80,25 @@
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt. <br /><br />Aliquam erat volutpat. Aenean accumsan.
+          <details class="about-made__more">
+            <p class="about-made__element-more">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+            </p>
+
+            <summary
+              class="about-made__button"
+              data-open="Read less"
+              data-close="Read more"
+            >
+              <svg class="btn-icon" width="8" height="12">
+                <use href="./images/icons.svg#icon-more"></use>
+              </svg>
+            </summary>
+          </details>
         </p>
-        <button class="about-made__button" type="button">
-          <span>Read more</span>
-          <svg class="btn-icon" width="8" height="12">
-            <use href="./images/icons.svg#icon-more"></use>
-          </svg>
-        </button>
       </div>
     </div>
+  </div>
 </section>

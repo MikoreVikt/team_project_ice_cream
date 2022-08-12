@@ -91,6 +91,11 @@
 
     }
 
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+
     &__item:not(:last-child) {
             margin-right: 35px;
     }
@@ -110,6 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     z-index: 150;
 
@@ -286,6 +292,11 @@
     }    
 }
 
+.link-red:hover,
+.link-red:hover {
+    background-color: var(--bg-red-btn-cl);
+}
+
 .link-white {
     display: flex;
     justify-content: center;
@@ -323,7 +334,7 @@
     display: flex;
     align-items: center;
 
-    z-index: 2;
+    z-index: 20;
 
     @media screen and (min-width: $desktop) {
         bottom: 60px;
@@ -362,12 +373,18 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        background-color: var(--white-color);
         cursor: pointer;
 
         @media screen and (min-width: $desktop) {
             width: 26px;
             height: 26px;
         }
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+        background-color: var(--bg-accent-color);
     }
 
     &--icon {
@@ -460,3 +477,46 @@
             display: none;
         }
 }
+
+#myBtn {
+    width: 50px;
+    height: 50px;
+
+    display: none; 
+
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+
+    border: none; 
+    outline: none; 
+
+    background-color: var(--bg-hd-color);
+    color: #fff;
+    
+    border-radius: 50%; 
+
+    cursor: pointer; 
+    z-index: 99; 
+    transform: rotate(270deg);
+
+
+    transition: background-color var(--anim-standart),
+                        color var(--anim-standart);
+  }
+  
+  #myBtn:hover {
+    background-color: #d41443; 
+    color: var(--bg-hd-color);
+  }
+
+  .btn-top__icon{
+    fill: currentColor;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  

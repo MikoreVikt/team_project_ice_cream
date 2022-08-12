@@ -10,5 +10,10 @@
     @media screen and (min-width: $desktop) {
         padding-top: 0;
         padding-bottom: 120px;
+        justify-content: center;
     }
+}
+
+.about-field__item {
+    justify-content: space-between;
 }

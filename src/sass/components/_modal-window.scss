@@ -105,6 +105,8 @@
   display: block;
 
   margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 15px;
   line-height: 1.2;
@@ -162,6 +164,15 @@
   }
 }
 
+.js-choice {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.js-choice:hover,:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .modal__field-input {
   display: block;
   width: 100%;
@@ -207,6 +218,7 @@
 
 .payment-icon {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .payment-wrapper {
@@ -285,6 +297,7 @@ textarea:focus {
   outline-offset: -2px;
   border-radius: 2px;
   background-color: var(--white-color);
+  cursor: pointer;
 
   transition: var(--anim-standart);
 }
@@ -364,13 +377,13 @@ textarea:focus {
 
 .modal__btn-send:hover,
 .modal__btn-send:focus {
-  background-color: var(--bg-accent-color);
+  background-color: var(--bg-red-btn-cl);
   outline-color: var(--accent-color);
 }
 
 .modal__btn-send:hover span,
 .modal__btn-send:focus span {
-  color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* radio buttons */

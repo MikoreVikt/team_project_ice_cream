@@ -17,6 +17,7 @@
   }
 
   @media screen and (min-width: $tablet) {
+    padding-bottom: 20px;
     background-image: none;
   }
 
@@ -106,6 +107,7 @@
   justify-content: center;
   background-color: var(--white-color);
   color: var(--bg-icon-cl);
+  margin-bottom: 30px;
 }
 
 .about-made__button:hover,
@@ -334,7 +336,6 @@
   color: var(--main-grey-text-color);
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 40px;
     font-size: 14px;
     line-height: 176%;
     color: var(--main-grey-text-color);

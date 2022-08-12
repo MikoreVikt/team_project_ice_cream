@@ -171,6 +171,11 @@
   color: var(--accent-color);
 }
 
+.footer__contact-tel:hover,
+.footer__contact-tel:focus {
+  color: var(--bg-red-btn-cl);
+}
+
 .rights {
   display: flex;
   flex-direction: column;

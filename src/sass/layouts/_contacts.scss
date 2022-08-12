@@ -228,6 +228,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   color: var(--white-color);
 
@@ -240,7 +241,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--bg-icon-cl);
+    background-color: var(--bg-red-btn-cl);
   }
 }
 
@@ -259,6 +260,8 @@
   align-items: center;
   justify-content: center;
   color: var(--bg-icon-cl);
+  cursor: pointer;
+
   @media screen and (min-width: $tablet) {
     width: 174px;
   }
@@ -273,4 +276,5 @@
 }
 .btn-icon-white {
   fill: var(--white-color);
+  margin-left: 14px;
 }

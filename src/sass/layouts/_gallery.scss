@@ -105,7 +105,8 @@
   overflow: hidden;
   border-radius: 8px;
   transform: scale(1) translateX(0);
-  transition: transform 1.5s ease-in-out;
+  transition: transform 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .gallery__image--one:hover,

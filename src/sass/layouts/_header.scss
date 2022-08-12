@@ -91,6 +91,11 @@
 
     }
 
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+
     &__item:not(:last-child) {
             margin-right: 35px;
     }
@@ -286,6 +291,11 @@
     }    
 }
 
+.link-red:hover,
+.link-red:hover {
+    background-color: var(--bg-red-btn-cl);
+}
+
 .link-white {
     display: flex;
     justify-content: center;
@@ -323,7 +333,7 @@
     display: flex;
     align-items: center;
 
-    z-index: 2;
+    z-index: 20;
 
     @media screen and (min-width: $desktop) {
         bottom: 60px;
@@ -362,12 +372,18 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        background-color: var(--white-color);
         cursor: pointer;
 
         @media screen and (min-width: $desktop) {
             width: 26px;
             height: 26px;
         }
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+        background-color: var(--bg-accent-color);
     }
 
     &--icon {

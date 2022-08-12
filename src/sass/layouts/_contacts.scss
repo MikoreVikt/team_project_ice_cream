@@ -1,11 +1,23 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #fff 22%, #fff5f6 22%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 22%,
+    var(--bg-ft-color) 22%
+  );
 
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to bottom, #fff 40%, #fff5f6 40%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 40%,
+      var(--bg-ft-color) 40%
+    );
   }
   @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(to bottom, #fff 17%, #fff5f6 17%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 17%,
+      var(--bg-ft-color) 17%
+    );
   }
 }
 .contacts__container {
@@ -34,7 +46,7 @@
 .contacts__list-item {
   --item: 1;
   padding: 40px 32px;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   @media screen and (max-width: 767px) {
@@ -60,8 +72,8 @@
   padding: 0 25px;
   margin-bottom: 20px;
 
-  background-color: #f0d1a5;
-  color: #ffffff;
+  background-color: var(--bg-product-1-color);
+  color: var(--white-color);
   border-radius: 4px;
   font-family: 'DM Sans';
   text-transform: uppercase;
@@ -76,7 +88,7 @@
   }
 }
 .contacts__list-title--green {
-  background-color: #c2e297;
+  background-color: var(--bg-product-2-color);
   @media screen and (min-width: $tablet) {
     padding: 0 23px;
   }
@@ -91,8 +103,8 @@
 .item-list-2 {
   margin-bottom: 24px;
   padding: 24px 0;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid var(--icon-cl-2);
+  border-bottom: 1px solid var(--icon-cl-2);
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
     padding: 32px 0;
@@ -115,7 +127,7 @@
   font-size: 12px;
   line-height: 1.83;
 
-  color: #000000;
+  color: var(--main-black-text-color);
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.87;
@@ -136,7 +148,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: var(--main-grey-text-color);
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
@@ -154,7 +166,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #ffa5ba;
+  color: var(--main-pink-text-color);
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.86;
@@ -172,7 +184,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: var(--main-grey-text-color);
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.86;
@@ -184,7 +196,7 @@
   }
 }
 .item-list__contacts:hover {
-  color: #d41443;
+  color: var(--bg-icon-cl);
 }
 .footer__btn-wrapper {
   display: inline-flex;
@@ -206,7 +218,7 @@
   height: 44px;
   padding-right: 17px;
   padding-left: 17px;
-  background-color: #d41342;
+  background-color: var(--bg-icon-cl);
   border: none;
   border-radius: 22px;
   font-family: 'DM Sans';
@@ -217,7 +229,7 @@
   align-items: center;
   justify-content: center;
 
-  color: #ffffff;
+  color: var(--white-color);
 
   @media screen and (min-width: $tablet) {
     width: 191px;
@@ -236,7 +248,7 @@
   display: inline-block;
   width: 161px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border: none;
   border-radius: 22px;
   font-family: 'DM Sans';
@@ -246,7 +258,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d41443;
+  color: var(--bg-icon-cl);
   @media screen and (min-width: $tablet) {
     width: 174px;
   }
@@ -256,10 +268,9 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--bg-accent-color);
   }
 }
-
 .btn-icon-white {
-  fill: #ffffff;
+  fill: var(--white-color);
 }

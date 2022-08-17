@@ -41,9 +41,9 @@
   &.is-open {
     transform: translateX(0);
     @media screen and (min-width: $tablet) {
-      width: 50%;
+      width: 40%;
       right: 0;
-      transform: translateX(100%);
+      transform: translateX(150%);
     }
   }
   @media screen and (min-width: $desktop) {
@@ -51,10 +51,11 @@
   }
 }
 .btn-burger-menu.is-open {
+  position: fixed;
+  top: 20px;
+  right: 18px;
   @media screen and (min-width: $tablet) {
-    position: absolute;
-    top: 0;
-    right: -50px;
+    right: -10px;
   }
 }
 .btn-mobile-menu {
